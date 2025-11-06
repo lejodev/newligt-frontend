@@ -1,0 +1,14 @@
+/* Styles for product details view */
+.product-details {
+
+    // height: 100vh;
+    .product-detail-card {
+        .product-detail-image {
+            width: 100%; // This, for image temportarily, delete when image available
+            height: 70vh;
+            background-color: rgb(202, 202, 202);
+        }
+
+        .product-detail-text {}
+    }
+}
