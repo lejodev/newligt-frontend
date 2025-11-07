@@ -34,9 +34,8 @@
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "prerender": false,
+            "ssr": false
           },
           "configurations": {
             "production": {
@@ -75,11 +74,14 @@
               "buildTarget": "frontend:build:production"
             },
             "development": {
-              "buildTarget": "frontend:build:development"
+              "buildTarget": "frontend:build:development",
+              "ssr": false
             }
           },
           "defaultConfiguration": "development",
-          "options": {}
+          "options": {
+            "ssr": false
+          }
         },
         "extract-i18n": {
           "builder": "@ngx-env/builder:extract-i18n",
