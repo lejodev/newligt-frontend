@@ -39,6 +39,7 @@
           },
           "configurations": {
             "production": {
+              "ssr":false,
               "budgets": [
                 {
                   "type": "initial",
