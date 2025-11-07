@@ -11,7 +11,10 @@ export class HttpService {
 
   api(endpoint: string) {
     let base = environment.apiUrl;
-    let apiUrl = `${base}/${endpoint}`
+    // let apiUrl = `${base}/${endpoint}`
+    let apiUrl = import.meta.env['NG_APP_apiUrl'] + `/${endpoint}`;
+    console.log(apiUrl);
+
     return apiUrl
   }
 
