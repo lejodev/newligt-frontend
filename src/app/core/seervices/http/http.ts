@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from '@envs/environment';
+// import { environment } from '@envs/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   api(endpoint: string) {
-    let base = environment.apiUrl;
+    // let base = environment.apiUrl;
     // let apiUrl = `${base}/${endpoint}`
     let apiUrl = import.meta.env['NG_APP_apiUrl'] + `/${endpoint}`;
     console.log(apiUrl);
